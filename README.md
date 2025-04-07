@@ -38,7 +38,7 @@
 2) Create An IAM Profile/Role For The Ansible Automation Engine (Dynamic Inventory)
 - Create an EC2 Service Role in IAM with AmazonEC2FullAccess Privilege 
 - Navigate to IAM
-![IAM!](https://github.com/prajwaldhone/Automated_CI-CD_Pipleline_3375/blob/zdocs/images/Screen%20Shot%202023-10-03%20at%206.20.44%20PM.png)
+![IAM!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/Screen%20Shot%202023-10-03%20at%206.20.44%20PM.png)
     - Click on `Roles`
     - Click on `Create Role`
     - Select `Service Role`
@@ -148,7 +148,7 @@
     - Launch Instance
 
 #### NOTE: Confirm and make sure you have a total of 9 VM instances
-![PipelineEnvSetup!](https://github.com/prajwaldhone/Automated_CI-CD_Pipleline_3375/blob/zdocs/images/Screenshot%202024-02-10%20at%202.17.03%E2%80%AFPM.png)
+![PipelineEnvSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/Screenshot%202024-02-10%20at%202.17.03%E2%80%AFPM.png)
 
 12) Slack 
     - Go to the bellow Workspace and create a Private Slack Channel and name it "yourfirstname-jenkins-cicd-pipeline-alerts"
@@ -164,7 +164,7 @@
       - Click `Add Jenkins CI Integration`
       - Scrol Down and Click `SAVE SETTINGS/CONFIGURATIONS`
       - Leave this page open
-      ![SlackConfig!](https://github.com/prajwaldhone/Automated_CI-CD_Pipleline_3375/raw/zdocs/images/Screen%20Shot%202023-04-26%20at%202.08.55%20PM.png)
+      ![SlackConfig!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-26%20at%202.08.55%20PM.png)
     
     #### NOTE: Update Your Jenkins file with your Slack Channel Name
     - Go back to your local, open your `Jenkins-Realworld-CICD-Project` repo/folder/directory on VSCODE
@@ -232,14 +232,14 @@
       - NexusPublicIPaddress:9100   
       - SonarQubePublicIPaddress:9100   
   - Exit
-  ![NodeExporter!](https://github.com/prajwaldhone/Automated_CI-CD_Pipleline_3375/raw/zdocs/images/Screen%20Shot%202023-04-26%20at%202.00.23%20PM.png)
+  ![NodeExporter!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-26%20at%202.00.23%20PM.png)
 
 ### Confirm That The Prometheus Service Disconvery Config Works As Expected
   - Open a TAB on your choice `Browser`
   - Copy the Prometheus `PublicIP Address` and paste on the `browser/tab` with port `9090` e.g `"PrometheusPublicIPAddres:9090"`
       - Once you get to the Prometheus Dashboard Click on `"Status"` and Click on `"Targets"`
   - Confirm that Prometheus is able to reach everyone of your `Nodes`, do this by confirming the Status `"UP" (green)`
-  ![ConfigurePrometheus!](https://github.com/prajwaldhone/Automated_CI-CD_Pipleline_3375/blob/zdocs/images/Screenshot%202024-02-10%20at%204.44.02%E2%80%AFPM.png)
+  ![ConfigurePrometheus!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/Screenshot%202024-02-10%20at%204.44.02%E2%80%AFPM.png)
 
 ### Open a New Tab on your browser for Grafana also if you've not done so already. 
   - Copy your `Grafana Instance Public IP` and put on the browser with port `3000` e.g `"GrafanaInstancePublic:3000"`
